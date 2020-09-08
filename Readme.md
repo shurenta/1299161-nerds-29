@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Древс](https://up.htmlacademy.ru/htmlcss/29/user/1299161).
-* Наставник: `Неизвестно`.
+* Наставник: `[Карина Карапетян] (https://htmlacademy.ru/profile/karinaweb)`.
 
 ---
 
