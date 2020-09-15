@@ -1,155 +1,164 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-  	<header>
-  		<nav>
-  			<a>
+
+  <body class="page-body">
+
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo">
   				<img src="https://via.placeholder.com/150x100" alt="логотип веб студии «Нёрдс»">
   			</a>
-  			<ul>
+  			<ul class="site-navigation">
   				<li><a href="blank.html">Студия</a></li>
   				<li><a href="blank.html">Клиенты</a></li>
   				<li><a href="catalog.html">Магазин</a></li>
   				<li><a href="blank.html">Контакты</a></li>	
   			</ul>
-  			<a href="blank.html">Корзина</a>
+  			<a class="basket" href="blank.html">Корзина</a>
   		</nav>
   	</header>
-  	<main>
-  		<h1>Веб студия "Нёрдс"</h1>
-  		<section>
-  			<h2>Качество наших работ</h2>
-        <ul>
-          <li>
-            <p>Долго, дорого,  скрупулезно.</p>
+
+  	<main class="wrapper">
+  		<h1 class="visually-hidden">Веб студия "Нёрдс"</h1>
+  		<section class="quality">
+  			<h2 class="visually-hidden">Качество наших работ</h2>
+        <ul class="quality-list">
+          <li class="quality-item">
+            <p class="quality-slogan">Долго, дорого,  скрупулезно.</p>
             <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="button quality-button" href="blank.html"><span class="button-text">Узнать больше</span></a>
             <img src= "https://via.placeholder.com/760x431" alt="Изображение телефонов">
           </li>
-          <li>
-            <p>Любим математику как никто другой</p>
+          <li class="quality-item">
+            <p class="quality-slogan">Любим математику как никто другой</p>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="button quality-button" href="blank.html"><span class="button-text">Узнать больше</span></a>
             <img src= "https://via.placeholder.com/760x431" alt="Изображение мониторов">
           </li>
-          <li>
-            <p>Только ночь,только хардкор</p>
+          <li class="quality-item">
+            <p class="quality-slogan">Только ночь,только хардкор</p>
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="blank.html">Узнать больше</a>
+            <a class="button quality-button" href="blank.html"><span class="button-text">Узнать больше</span></a>
             <img src= "https://via.placeholder.com/760x431" alt="Изображение планшета и телефона">
           </li>
         </ul>
-  			<div>
+  			<div class="quality-container-button">
   				<button type="button"></button>
   				<button type="button"></button>
   				<button type="button"></button>
   			</div>
   		</section>
-  		<section>
-  			<h2>Наши услуги</h2>
-  			<ul>
-  				<li>
+  		<section class="services">
+  			<h2 class="visually-hidden">Наши услуги</h2>
+  			<ul class="services-item">
+  				<li class="services-list">
   					<h3>Веб-сайты</h3>
   					<!-- Картинка блока будет добавленна через CSS так как является оформлением -->
   					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<a href="blank.html">Заказать</a>
+  					<a class="button services-button-sites" href="blank.html"><span class="button-text">Заказать</span></a>
   				</li>
-  				<li>
+  				<li class="services-list">
   					<h3>Приложения</h3>
   					<!-- Картинка блока будет добавленна через CSS так как является оформлением -->
   					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<a href="blank.html">Заказать</a>
+  					<a class="button services-button-applications" href="blank.html"><span class="button-text">Заказать</span></a>
   				</li>
-  				<li>
+  				<li class="services-list">
   					<h3>Презентации</h3>
   					<!-- Картинка блока будет добавленна через CSS так как является оформлением -->
   					<p>Вы даже не подозреваете,насколько вы изумительны!</p>
-  					<a href="blank.html">Заказать</a>
+  					<a class="button services-button-presentations" href="blank.html"><span class="button-text">Заказать</span></a>
   				</li>
   			</ul>
   		</section>
-  		<section>
-  			<h2>О нас</h2>
-  			<p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+  		<section class="about-us">
+  			<h2 class="visually-hidden">О нас</h2>
+  			<p class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
   			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-  			<p>Выполняем заказы на разработку:</p>
-  			<ul>
-  				<li>Веб-сайтов любой сложности</li>
-  				<li>Мобильных приложений для iOS и Android</li>
-  				<li>Слайдшоу и видео для корпоративных презентаций</li>
-  			</ul>
-  		</section>
-  		<section>
-  			<h2>Мы любим точность</h2>
+        <div class="about-us-container">
+    			<p>Выполняем заказы на разработку:</p>
+    			<ul class="about-us-item">
+    				<li class="about-us-list">Веб-сайтов любой сложности</li>
+    				<li class="about-us-list">Мобильных приложений для iOS и Android</li>
+    				<li class="about-us-list">Слайдшоу и видео для корпоративных презентаций</li>
+    			</ul>
+        </div>
+    	</section>
+  		<section class="accuracy">
+  			<h2 class="visually-hidden">Мы любим точность</h2>
   			<!-- Картинка блока будет добавленна через CSS так как является оформлением -->
-  			<p>с 2004 года Любим точность во всем:</p>
-  			<dl>
-  				<div>
-  					<dt>146%</dt>
+  			<p class="accuracy-slogan">с 2004 года Любим точность во всем:</p>
+  			<dl class="accuracy-description-list">
+  				<div class="description-container">
+  					<dt class="accuracy-description-term">146<span>%</span></dt>
   					<dd>Уровень самоотдачи</dd>
   				</div>
-  				<div>
-  					<dt>100%</dt>
+  				<div class="description-container">
+  					<dt class="accuracy-description-term">100<span>%</span></dt>
   					<dd>Соблюдение сроков</dd>
   				</div>
-  				<div>
-  					<dt>50%</dt>
-  					<dd>Минимальная предоплата</dd>
+  				<div class="description-container">
+  					<dt class="accuracy-description-term">50<span>%</span></dt>
+  					<dd class="accuracy-description-definition">Минимальная предоплата</dd>
   				</div>
   			</dl>
   		</section>
-  		<section>
-  			<h2>Наши партнеры</h2>
-  			<ul>
-  				<li>
-  					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/199x67" alt="логотип академии «Htmlacademy»"></a>
+  		<section class="partners">
+  			<h2 class="visually-hidden">Наши партнеры</h2>
+  			<ul class="partners-list">
+  				<li class="partners-item">
+  					<a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/199x67" alt="логотип академии «Htmlacademy»"></a>
   				</li>
-  				<li>
-  					<a href="blank.html"><img src="https://via.placeholder.com/209x90" alt="логотип барбершопа «Бородинский»"></a>
+  				<li class="partners-item">
+  					<a class="partners-link" href="blank.html"><img src="https://via.placeholder.com/209x90" alt="логотип барбершопа «Бородинский»"></a>
   				</li>
-  				<li>
-  					<a href="blank.html"><img src="https://via.placeholder.com/185x52" alt="логотип приложения «Pink»"></a>
+  				<li class="partners-item">
+  					<a class="partners-link" href="blank.html"><img src="https://via.placeholder.com/185x52" alt="логотип приложения «Pink»"></a>
   				</li>
-  				<li>
-  					<a href="blank.html"><img src="https://via.placeholder.com/173x84" alt="логотип магазина «Mishka»"></a>
+  				<li class="partners-item">
+  					<a class="partners-link" href="blank.html"><img src="https://via.placeholder.com/173x84" alt="логотип магазина «Mishka»"></a>
   				</li>
   			</ul>
   		</section>
   	</main>
-  	<footer>
-  		<section>
-  			<h2>Как нас найти?</h2>
+
+  	<footer class="page-footer main-footer">
+  		<section class="footer-contacts">
+  			<h2 class="visually-hidden">Как нас найти?</h2>
   			<img src="https://via.placeholder.com/1440x416" alt="наш адресc: 191186, Санкт-Петербург, Б. Конюшенная, д. 19/8">
-	  		<section>
-	  			<h3>Наши контакты</h3>
+	  		<section class="footer-address">
+	  			<h3 class="visually-hidden">Наши контакты</h3>
 	  			<b>NЁRDS DESIGN STUDIO</b>
 	  			<p>
 	  				191186, Санкт-Петербург,
 	  				Б. Конюшенная, д. 19/8
 	  			</p>
-	  			<p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-	  			<a href="blank.html">Напишите нам</a>
+	  			<p>тел.<a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+	  			<a class="button write-us-button" href="blank.html"><span class="button-text">Напишите нам</span></a>
   			</section>
   		</section>
-  		<section>
-  			<h2>Давайте дружить!</h2>
-  			<ul>
-  				<li>
-  					<a href="blank.html"><span>В контакте</span></a>
+  		<section class="footer-social">
+  			<h2 class="visually-hidden">Давайте дружить!</h2>
+  			<ul class="footer-social-list">
+  				<li class="footer-social-item">
+  					<a class="social-button" href="blank.html"><span class="button-text">В контакте</span></a>
   				</li>
-  				<li>
-  					<a href="blank.html"><span>Фейсбук</span></a>
+  				<li class="footer-social-item">
+  					<a class="social-button" href="blank.html"><span class="button-text">Фейсбук</span></a>
   				</li>
-  				<li>
-  					<a href="blank.html"><span>Инстаграм</span></a>
+  				<li class="footer-social-item">
+  					<a class="social-button" href="blank.html"><span class="button-text">Инстаграм</span></a>
   				</li>
   			</ul>
-  			<p>Давайте дружить, это выгодно!</p>
-  			<p>Скидка 10% для друзей из социальных сетей.</p>
+  			<p class="footer-social-slogan">Давайте дружить, это выгодно!</p>
+  			<p class="footer-social-text">Скидка 10% для друзей из социальных сетей.</p>
   		</section>
   	</footer>
   </body>
