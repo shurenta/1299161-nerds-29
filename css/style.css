@@ -2,11 +2,11 @@
 
 :root {
 	--basic-black: #000000;
-	--basik-light-black: #283136;
-	--basik-light-gray: #EEEEEE;
-	--basik-dark-grey: #4D4D4D;
-	--basik-white: #FFFFFF;
-	--basik-light-red: #FB565A;
+	--basic-light-black: #283136;
+	--basic-light-gray: #EEEEEE;
+	--basic-dark-grey: #4D4D4D;
+	--basic-white: #FFFFFF;
+	--basic-light-red: #FB565A;
 
 	--special-red: #E74246;
 	--special-extra-red: #D7373B;
@@ -17,34 +17,37 @@
 	--special-gray: #666666;
 	--special-dark-grey: 444444;
 	--special-light-grey: #E1E1E1;
+
+	--special-wihte-opacity: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
 
 body {
-	min-width: 1157px;
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto" , Arial, sans-serif;
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 24px;
-	color: var(--basik-light-black);
+	color: var(--basic-light-black);
 }
 
 .page a {
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+ 	max-width: 100%;
+  	height: auto;
 }
 
 
 /*main-header*/
 
 .main-header {
-	background-color: var(--basik-light-gray);
+	background-color: var(--basic-light-gray);
 }
 
 /* Main navigation */
@@ -69,7 +72,7 @@ img {
 
 .site-navigation a:hover,
 .basket:hover {
-	color: var(--basik-light-red);
+	color: var(--basic-light-red);
 }
 
 .site-navigation a:focus,
@@ -81,7 +84,7 @@ img {
 /*quality*/
 
 .quality {
-	background-color: var(--basik-light-gray);
+	background-color: var(--basic-light-gray);
 }
 
 .quality-list {
@@ -95,14 +98,14 @@ img {
 	color:var(--basic-black);
 }
 
-.quality-item p {
+.quality-text {
 	font-size: 16px;
 	line-height: 24px;
-	color: var(--basik-light-black);
+	color: var(--basic-light-black);
 }
 
 .quality-button {
-	background-color: var(--basik-light-red);
+	background-color: var(--basic-light-red);
 }
 
 .quality-button:focus {
@@ -126,11 +129,11 @@ img {
 .services-list p {
 	font-size: 16px;
 	line-height: 24px;
-	color: var(--basik-light-black);
+	color: var(--basic-light-black);
 }
 
 .services-button-sites {
-	background-color: var(--basik-light-red);
+	background-color: var(--basic-light-red);
 }
 
 .services-button-sites:focus {
@@ -163,10 +166,10 @@ img {
 }
 
 
-.about-us-container p {
+.about-us-lead {
 	font-weight: bold;
 	text-transform: uppercase;
-	color: var(--basik-light-black);
+	color: var(--basic-light-black);
 }
 
 .about-us-item {
@@ -189,11 +192,10 @@ img {
 	line-height: 64px;
 }
 
-.accuracy-description-term span {
+.description-element {
 	color: var(--basic-black);
 	font-size: 26px;
 	line-height: 40px;
-	vertical-align: top;
 }
 
 .accuracy-description-definition {
@@ -233,7 +235,7 @@ img {
 }
 
 .write-us-button {
-	background-color: var(--basik-light-red);
+	background-color: var(--basic-light-red);
 }
 
 .write-us-button:focus {
@@ -249,7 +251,7 @@ img {
 
 .social-button{
 	background-color: var(--special-light-grey);
-	color: var(--basik-white);
+	color: var(--basic-white);
 }
 
 .social-button:hover {
@@ -283,18 +285,19 @@ img {
 .button {
 	font-size: 16px;
 	line-height: 18px;
-	color: var(--basik-white);
+	color: var(--basic-white);
 	align-items: center;
 	text-align: center;
 	text-transform: uppercase;
 	border-radius: 3px;
 }
 
-.button:focus .button-text {
-	opacity: 0.3;
-	
+
+.button:focus {
+	color: var(--special-wihte-opacity);
 }
 
-.social-button:focus .button-text {
-	opacity: 0.3;
+
+.social-button:focus {
+	color: var(--special-wihte-opacity);
 }
