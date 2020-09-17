@@ -17,8 +17,12 @@
 	--special-gray: #666666;
 	--special-dark-grey: 444444;
 	--special-light-grey: #E1E1E1;
+	--special-extra-grey: #DFDFDF;
+	--special-extra-light-grey:#D5D5D5;
+	--special-border-grey:#DBDBDB;;
 
 	--special-wihte-opacity: rgba(255, 255, 255, 0.3);
+	--special-black-opacity: rgba(0, 0, 0, 0.3);
 }
 
 /* Global */
@@ -108,8 +112,13 @@ img {
 	background-color: var(--basic-light-red);
 }
 
+.quality-button:hover {
+	background-color: var(--special-red);
+}
+
 .quality-button:focus {
 	background-color: var(--special-red);
+	color: var(--special-wihte-opacity);
 }
 
 
@@ -136,16 +145,26 @@ img {
 	background-color: var(--basic-light-red);
 }
 
+.services-button-sites:hover {
+	background-color: var(--special-extra-red);
+}
+
 .services-button-sites:focus {
 	background-color: var(--special-red);
+	color: var(--special-wihte-opacity);
 }
 
 .services-button-applications {
 	background-color: var(--special-light-green);
 }
 
+.services-button-applications:hover {
+	background-color: var(--special-extra-green);
+}
+
 .services-button-applications:focus {
 	background-color: var(--special-extra-green);
+	color: var(--special-wihte-opacity);
 }
 
 
@@ -153,8 +172,13 @@ img {
 	background-color: var(--special-light-yellow);
 }
 
+.services-button-presentations:hover {
+	background-color: var(--special-extra-yellow);
+} 
+
 .services-button-presentations:focus {
 	background-color: var(--special-extra-yellow);
+	color: var(--special-wihte-opacity);
 }
 
 
@@ -210,6 +234,128 @@ img {
 	list-style: none;
 }
 
+
+/*page-catalog*/
+
+.title-catalog {
+	color: var(--basic-black);
+	background-color: var(--basic-light-gray); 
+	font-weight: 500px;
+	font-size: 55px;
+	align-items: center;
+}
+
+/*templates*/
+
+.templates-sizing p {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+
+.templates-list {
+	list-style: none;
+}
+
+.templates-item a {
+	color: color: var(--basic-black);
+	font-size: 14px;
+	line-height: 18px;
+	opacity: 0.3;
+}
+
+.templates-item a:hover {
+	opacity: 0.6;
+}
+
+.templates-item a:focus,
+.templates-item a:active {
+	color: var(--basic-black);
+}
+
+/*catalog-list*/
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-benefits {
+	background-color: var(--basic-light-gray);
+}
+
+.catalog-benefits-title {
+	color: var(--basic-black);
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	align-items: center;
+	text-align: center;
+}
+
+.catalog-benefits-title:hover {
+	color: var(--basic-light-red);
+}
+
+.catalog-benefits-title:focus {
+	color: var(--special-black-opacity);
+}
+
+
+.catalog-benefits-text {
+	color var(--special-gray); 
+	font-size: 16px;
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+}
+
+.catalog-benefits-button {
+	background-color: var(--basic-light-red); 
+}
+
+.catalog-benefits-button:hover {
+	background-color: var(--special-red);
+}
+
+.catalog-benefits-button:focus {
+	background-color: var(--special-red);
+}
+
+
+.catalog-pagination-list {
+	list-style: none;
+}
+
+.catalog-pagination-item a {
+	background-color: var(--basic-light-gray);
+	color: var(--basic-black);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.catalog-pagination-item a:hover {
+	background-color: var(--special-extra-grey);
+}
+
+.catalog-pagination-item a:focus {
+	background-color:var(--special-extra-light-grey);
+	color: var(--special-black-opacity);
+}
+
+.catalog-pagination-item a:active {
+	background-color: var(--basic-white);
+	border:3px solid;
+	border-color: var(--special-border-grey);
+}
+
 /*footer-contacts*/
 
 .footer-address b {
@@ -240,6 +386,7 @@ img {
 
 .write-us-button:focus {
 	background-color: var(--special-red);
+	color: var(--special-wihte-opacity);
 }
 
 
@@ -291,12 +438,6 @@ img {
 	text-transform: uppercase;
 	border-radius: 3px;
 }
-
-
-.button:focus {
-	color: var(--special-wihte-opacity);
-}
-
 
 .social-button:focus {
 	color: var(--special-wihte-opacity);
