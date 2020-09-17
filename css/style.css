@@ -15,13 +15,13 @@
 	--special-light-yellow: #EFC849;
 	--special-extra-yellow: #EAB534;
 	--special-gray: #666666;
-	--special-dark-grey: 444444;
+	--special-dark-grey: #444444;
 	--special-light-grey: #E1E1E1;
 	--special-extra-grey: #DFDFDF;
-	--special-extra-light-grey:#D5D5D5;
-	--special-border-grey:#DBDBDB;;
+	--special-extra-light-grey: #D5D5D5;
+	--special-border-grey: #DBDBDB;
 
-	--special-wihte-opacity: rgba(255, 255, 255, 0.3);
+	--special-white-opacity: rgba(255, 255, 255, 0.3);
 	--special-black-opacity: rgba(0, 0, 0, 0.3);
 }
 
@@ -118,7 +118,7 @@ img {
 
 .quality-button:focus {
 	background-color: var(--special-red);
-	color: var(--special-wihte-opacity);
+	color: var(--special-white-opacity);
 }
 
 
@@ -151,7 +151,7 @@ img {
 
 .services-button-sites:focus {
 	background-color: var(--special-red);
-	color: var(--special-wihte-opacity);
+	color: var(--special-white-opacity);
 }
 
 .services-button-applications {
@@ -164,7 +164,7 @@ img {
 
 .services-button-applications:focus {
 	background-color: var(--special-extra-green);
-	color: var(--special-wihte-opacity);
+	color: var(--special-white-opacity);
 }
 
 
@@ -178,7 +178,7 @@ img {
 
 .services-button-presentations:focus {
 	background-color: var(--special-extra-yellow);
-	color: var(--special-wihte-opacity);
+	color: var(--special-white-opacity);
 }
 
 
@@ -282,11 +282,11 @@ img {
 	list-style: none;
 }
 
-.catalog-benefits {
+.catalog-item-wrapper {
 	background-color: var(--basic-light-gray);
 }
 
-.catalog-benefits-title {
+.catalog-item-title {
 	color: var(--basic-black);
 	font-weight: bold;
 	font-size: 18px;
@@ -295,32 +295,32 @@ img {
 	text-align: center;
 }
 
-.catalog-benefits-title:hover {
+.catalog-item-title:hover {
 	color: var(--basic-light-red);
 }
 
-.catalog-benefits-title:focus {
+.catalog-item-title:focus {
 	color: var(--special-black-opacity);
 }
 
 
-.catalog-benefits-text {
-	color var(--special-gray); 
+.catalog-item-text {
+	color: var(--special-gray); 
 	font-size: 16px;
 	line-height: 18px;
 	align-items: center;
 	text-align: center;
 }
 
-.catalog-benefits-button {
+.catalog-item-button {
 	background-color: var(--basic-light-red); 
 }
 
-.catalog-benefits-button:hover {
+.catalog-item-button:hover {
 	background-color: var(--special-red);
 }
 
-.catalog-benefits-button:focus {
+.catalog-item-button:focus {
 	background-color: var(--special-red);
 }
 
@@ -386,7 +386,7 @@ img {
 
 .write-us-button:focus {
 	background-color: var(--special-red);
-	color: var(--special-wihte-opacity);
+	color: var(--special-white-opacity);
 }
 
 
@@ -440,5 +440,5 @@ img {
 }
 
 .social-button:focus {
-	color: var(--special-wihte-opacity);
+	color: var(--special-white-opacity);
 }
