@@ -1,5 +1,23 @@
 /* Variables */
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 :root {
 	--basic-black: #000000;
 	--basic-light-black: #283136;
@@ -271,7 +289,6 @@ img {
 	opacity: 0.6;
 }
 
-.templates-item a:focus,
 .templates-item a:active {
 	color: var(--basic-black);
 }
@@ -299,7 +316,7 @@ img {
 	color: var(--basic-light-red);
 }
 
-.catalog-item-title:focus {
+.catalog-item-title:focus{
 	color: var(--special-black-opacity);
 }
 
@@ -320,7 +337,7 @@ img {
 	background-color: var(--special-red);
 }
 
-.catalog-item-button:focus {
+.catalog-item-button:focus{
 	background-color: var(--special-red);
 }
 
@@ -350,11 +367,6 @@ img {
 	color: var(--special-black-opacity);
 }
 
-.catalog-pagination-item a:active {
-	background-color: var(--basic-white);
-	border:3px solid;
-	border-color: var(--special-border-grey);
-}
 
 /*footer-contacts*/
 
@@ -397,9 +409,16 @@ img {
 }
 
 .social-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 81px;
+	height: 81px;
+	border-radius: 50%;
 	background-color: var(--special-light-grey);
 	color: var(--basic-white);
 }
+
 
 .social-button:hover {
 	background-color: var(--special-red);
@@ -407,6 +426,7 @@ img {
 
 .social-button:focus {
 	background-color: var(--special-extra-red);
+	fill-opacity: 0.3;
 }
 
 
@@ -439,6 +459,3 @@ img {
 	border-radius: 3px;
 }
 
-.social-button:focus {
-	color: var(--special-white-opacity);
-}
