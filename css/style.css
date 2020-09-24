@@ -354,14 +354,18 @@ img {
 /*page-catalog*/
 
 .title-catalog {
-	color: var(--basic-black);
-	background-color: var(--basic-light-gray); 
+	color: var(--basic-black); 
 	font-weight: 500px;
 	font-size: 55px;
-	margin: 0 auto;
+	margin: 0;
 	text-align: center;
+
+}
+
+.wrapper-title {
 	padding-top: 89px;
 	padding-bottom: 116px;
+	background-color: var(--basic-light-gray);
 }
 
 /*templates*/
@@ -409,7 +413,9 @@ img {
 	"filter catalog";
 	grid-template-columns: min-content auto;
 	margin-bottom: 60px;
+	grid-column-gap: 140px;
 }
+
 /*сделал размеры блока с фильтром что бы выстроить сетку*/
 .filter-shape {
 	grid-area: filter;
@@ -418,8 +424,8 @@ img {
 }
 
 .templates {
+	width: auto; /*по поводу фикс.ширины контейнера каталога: решил добавить сюда ширину авто, так как блок wrapper-catalog цетрует содержимое*/ 
 	grid-area: catalog;
-  	margin-left: 140px;
 }
 
 .templates-sizing {
@@ -465,6 +471,7 @@ img {
 	align-items: center;
 	text-align: center;
 }
+
 
 .catalog-item-title:hover,
 .catalog-item-title:focus {
@@ -585,6 +592,11 @@ img {
 
 .write-us-button {
 	background-color: var(--basic-light-red);
+}
+
+.write-us-button:hover,
+.write-us-button:focus {
+	background-color: var(--special-red);
 }
 
 .write-us-button:active {
