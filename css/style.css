@@ -532,13 +532,15 @@ img {
 }
 
 .footer-contacts img {
+	width: 100%;
+	height: 416px;
 	position: absolute;
 	z-index: -1;
 }
 
-.wrapper-container-catalog {
-	min-height: 416px;
+.wrapper-contacts {
 	width: 1160px;
+	min-height: 416px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -547,6 +549,7 @@ img {
 	width: 319px;
 	height: 308px;
 	position: absolute;
+	left: 0;
 	top: 54px;
 	background-color: var(--basic-white);
 }
@@ -616,6 +619,9 @@ img {
 	color: var(--basic-white);
 }
 
+.social-button:active {
+	background-color: var(--special-extra-red);
+}
 
 .social-button:hover,
 .social-button:focus {
@@ -623,9 +629,10 @@ img {
 }
 
 .social-button:active svg {
-	background-color: var(--special-extra-red);
 	fill-opacity: 0.3;
 }
+
+
 
 
 .footer-social-slogan {
@@ -660,4 +667,3 @@ img {
 	text-transform: uppercase;
 	border-radius: 3px;
 }
-
