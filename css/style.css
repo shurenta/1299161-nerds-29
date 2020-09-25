@@ -79,6 +79,8 @@ img {
 	align-content: start;
 }
 
+
+
 /*main-header*/
 
 
@@ -97,25 +99,39 @@ img {
 
 
 .main-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 1160px;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: auto 1fr auto;
-	column-gap: 200px;
+	padding-top: 40px;
+	padding-bottom: 9px;
+	/*display: grid;*/
+	/*grid-template-columns: auto 1fr auto;*/
+	/*column-gap: 200px;*/
 	font-size: 16px;
 	line-height: 30px;
 	color: var(--basic-black);
 	text-transform: uppercase;
-	padding-top: 40px;
-	width: 1160px;
-	margin: 0 auto;
 }
 
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+}
 
 .site-navigation {
+	width: 437px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.basket {
+	max-width: 75px;
 }
 
 
@@ -272,9 +288,10 @@ img {
 
 
 .wrapper-about-us {
-	display: grid;
+	display: flex;
+/*	display: grid;
 	grid-template-columns: 1fr min-content;
-	column-gap: 140px;
+	column-gap: 140px;*/
 	margin-bottom: 77px;
 }
 
@@ -299,6 +316,7 @@ img {
 }
 
 /*accuracy*/
+
 
 .accuracy-slogan {
 	color: var(--basic-black);
@@ -346,16 +364,18 @@ img {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: grid;
+	display: flex;
+	justify-content: space-around;
+/*	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	column-gap: 41px;
+	column-gap: 41px;*/
 }
 
 /*page-catalog*/
 
 .title-catalog {
 	color: var(--basic-black); 
-	font-weight: 500px;
+	font-weight: bold;
 	font-size: 55px;
 	margin: 0;
 	text-align: center;
@@ -370,17 +390,38 @@ img {
 
 /*templates*/
 
+.templates {
+	width: auto; /*по поводу фикс.ширины контейнера каталога: решил добавить сюда ширину авто, так как блок wrapper-catalog цетрует содержимое*/ 
+	grid-area: catalog;
+}
+
+.templates-sizing {
+	display: flex;
+}
+
 .templates-sizing p {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
 	align-items: center;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 
 .templates-list {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 267px;
+
+}
+
+.templates-list-up {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
 }
 
 .templates-item a {
@@ -389,6 +430,15 @@ img {
 	line-height: 18px;
 	opacity: 0.3;
 }
+
+
+.templates-list-up a {
+	color: color: var(--basic-black);
+	font-size: 14px;
+	line-height: 18px;
+	opacity: 0.3;
+}
+
 
 .templates-item a:hover,
 .templates-item a:focus {
@@ -399,10 +449,17 @@ img {
 	color: var(--basic-black);
 }
 
+.templates-item-up a:hover,
+.templates-item-up a:focus {
+	opacity: 0.6;
+}
+
+.templates-item-up a:active {
+	color: var(--basic-black);
+}
+
 
 /*catalog*/
-
-
 
 .wrapper-catalog {
 	width: 1160px;
@@ -423,25 +480,7 @@ img {
   	height: 772px;
 }
 
-.templates {
-	width: auto; /*по поводу фикс.ширины контейнера каталога: решил добавить сюда ширину авто, так как блок wrapper-catalog цетрует содержимое*/ 
-	grid-area: catalog;
-}
 
-.templates-sizing {
-	display: grid;
-	grid-template-columns: min-content min-content;
-}
-
-.templates-sizing p{
-	margin: 0;
-}
-
-.templates-list {
-	padding: 0;
-	margin: 0;
-	margin-left: 267px;
-}
 /*catalog-list*/
 
 .catalog-list {
@@ -453,6 +492,7 @@ img {
 	grid-column-gap: 41px;
 	grid-row-gap: 31px;
 }
+
 /*добавил рамки что бы лучше было видно границы карточек*/
 .catalog-item {
 	border: 1px solid var(--special-light-grey); 
@@ -614,9 +654,15 @@ img {
 }
 
 .footer-social-list {
+	display: flex;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.footer-social-item {
+	margin-right: 10px;
+
 }
 
 .social-button{
