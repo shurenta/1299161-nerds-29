@@ -107,7 +107,7 @@ img {
 	padding-top: 40px;
 	padding-bottom: 9px;
 	display: grid;
-	grid-template-columns: auto 1fr auto;
+	grid-template-columns: auto 437px auto;
 	column-gap: 200px;
 	font-size: 16px;
 	line-height: 30px;
@@ -121,7 +121,6 @@ img {
 }
 
 .site-navigation {
-	width: 437px;
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
@@ -228,11 +227,6 @@ img {
 	display: block;
 	margin-right: 17px;
 }
-
-.quality-container-button button:nth-child(3n) {
-	margin-right: 0;
-}
-
 
 /*services*/
 
@@ -688,6 +682,7 @@ img {
 
 .footer-social-item {
 	margin-right: 10px;
+	margin-bottom: 10px;
 
 }
 
