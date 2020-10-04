@@ -161,7 +161,6 @@ img {
 	background-position: 0 0;
 }
 
-
 .site-navigation a,
 .basket {
 	color: var(--basic-black);
@@ -180,6 +179,12 @@ img {
 	opacity: 0.3;
 	color:var(--basic-black);
 }
+
+.basket:active::before {
+	opacity: 1;
+}
+
+
 
 /*quality*/
 
