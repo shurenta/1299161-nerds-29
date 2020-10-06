@@ -226,11 +226,16 @@ img {
 
 
 .quality-item {
-	padding-right: 760px;
+	padding-right: 600px;
 	padding-top: 78px;
 	padding-bottom: 80px;
 	background-repeat: no-repeat;
 	background-position: right;
+	display: none;
+}
+
+.quality-current {
+	display: block;
 }
 
 .quality-slide-1 {
@@ -255,23 +260,25 @@ img {
 	margin-bottom: 25px;
 }
 
+
 .quality-text {
 	font-size: 16px;
 	line-height: 24px;
 	color: var(--basic-light-black);
 }
 
-.quality-item {
-	display: none;
+.quality-slide-2 .quality-text {
+	width: 416px;
 }
 
-.quality-current {
-	display: block;
+.quality-slide-3 .quality-text {
+	width: 350px;
 }
-
 
 .quality-button {
 	width: 240px;
+	padding-left: 8px;
+	padding-right: 8px;
 	background-color: var(--basic-light-red);
 	margin-top: 38px;
 }
@@ -292,7 +299,7 @@ img {
 	z-index: 20;
 	bottom: 96px;
 	left: 50%; 
-	transform: translateX(-37%);
+	transform: translateX(-50%);
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -348,14 +355,18 @@ img {
 	line-height: 30px;
 	text-transform: uppercase;
 	color: var(--basic-black);
+	margin: 0;
+	margin-top: 25px;
 }
 
 .services-list p {
+	width: 260px;
 	font-size: 16px;
 	line-height: 24px;
 	margin: 0;
-	padding-bottom: 48px;
+	margin-top: 25px;
 	color: var(--basic-light-black);
+	margin-bottom: 32px;
 }
 
 .services-item {
@@ -403,7 +414,9 @@ img {
 
 .services-button-sites {
 	background-color: var(--basic-light-red);
-	width: 160px;  
+	width: 81px;
+	padding-left: 39px;
+	padding-right: 40px; 
 }
 
 .services-button-sites:hover,
@@ -418,7 +431,9 @@ img {
 
 .services-button-applications {
 	background-color: var(--special-light-green);
-	width: 160px;
+	width: 81px;
+	padding-left: 39px;
+	padding-right: 40px; 
 }
 
 .services-button-applications:hover,
@@ -433,8 +448,10 @@ img {
 
 
 .services-button-presentations {
+	width: 81px;
 	background-color: var(--special-light-yellow);
-	width: 160px;
+	padding-left: 39px;
+	padding-right: 40px;
 }
 
 .services-button-presentations:hover,
@@ -451,9 +468,6 @@ img {
 
 /*about-us*/
 
-.about-us {
-
-}
 
 .wrapper-about-us {
 	display: grid;
@@ -473,7 +487,6 @@ img {
 .about-us-text {
 	margin: 0;
 	margin-top: 32px;
-	margin-bottom: 39px;
 }
 
 .about-us-lead {
@@ -481,12 +494,14 @@ img {
 	text-transform: uppercase;
 	color: var(--basic-light-black);
 	margin: 0;
+	margin-top: 39px;
 }
 
 
 .about-us-list {
 	padding: 0;
 	margin: 0;
+	margin-top: 24px;
 }
 
 .about-us-item {
@@ -496,9 +511,10 @@ img {
 	padding-left: 32px;
 }
 
-.about-us-item:last-child {
-	padding-bottom: 0;
+.about-us-item:first-child {
+	margin-top: 0;
 }
+
 
 .about-us-item::before {
 	content: "";
@@ -518,16 +534,9 @@ img {
 	flex-wrap: wrap;
 }
 
-.accuracy-img {
-	width: 360px;
-	height: 208px;
-	background-image: url("../img/illustration-4.png");
-	background-repeat: no-repeat;
-	margin: 0 auto;
-	margin-bottom: 37px;
-}
 
 .accuracy-slogan {
+	margin-top: 37px;
 	padding: 0;
 	text-align: center;
 	color: var(--basic-black);
@@ -590,7 +599,12 @@ img {
 	position: relative;
 }
 
+.partners-link {
+	/*display: block;*/
+}
+
 .partners-link img {
+	/*display: block;*/
 	opacity: 0.2;
 }
 
@@ -847,8 +861,9 @@ img {
 
 
 .catalog-item-button {
-	margin: 0 auto;
-	width: 200px;
+	padding-left: 72px;
+	padding-right: 72px;
+	width: 56px;
 	background-color: var(--basic-light-red); 
 }
 
@@ -979,7 +994,9 @@ img {
 .write-us-button {
 	margin-top: 37px;
 	background-color: var(--basic-light-red);
-	width: 219px;
+	width: 131px;
+	padding-left: 44px;
+	padding-right: 44px;
 }
 
 .write-us-button:hover,
