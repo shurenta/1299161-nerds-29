@@ -47,7 +47,12 @@ input[type="radio"].visually-hidden {
 	--special-basket: rgba(0, 0, 0,1);
 	--special-form-border: #D7DCDE;
 	--special-border-form: #B4B9BB;
-	--specail-border-modal: rgba(0, 0, 0, 0.4);
+	--special-border-modal: rgba(0, 0, 0, 0.4);
+	--special-form-background: #F1F1F1;
+	--special-rage-form: #00CA74;
+	--special-toggle-background: #ABABAB;
+	--special-toogle-shadow: #CFCFCF;
+	--specail-color-input: #283136;
 }
 
 /* Global */
@@ -633,7 +638,97 @@ img {
 	opacity: 1;
 }
 
+/*filter-shape*/
+
+/*.form-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 48px;
+}
+
+.form-legent {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-group-grid {
+	margin-top: 54px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: var(--special-form-background);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--special-form-border);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--special-rage-form);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--special-toggle-background);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--special-toogle-shadow);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--specail-color-input);
+  border: none;
+  border-radius: 5px;
+  background: var(--special-form-background);
+  font-size: 16px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}*/
 /*page-catalog*/
+
 .title-catalog-wrapper {
 	padding-top: 89px;
 	padding-bottom: 116px;
@@ -692,6 +787,7 @@ img {
 }
 
 .templates-item {
+	margin: 0;
 	margin-right: 25px;
 	text-transform: uppercase;
 }
@@ -771,8 +867,6 @@ img {
 /*catalog*/
 
 
-
-/*сделал размеры блока с фильтром что бы выстроить сетку*/
 .filter-shape {
 	grid-area: filter;
   	width: 260px;
@@ -791,6 +885,7 @@ img {
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 40px;
 	grid-row-gap: 32px;
+
 }
 
 .catalog-item {
@@ -938,12 +1033,12 @@ img {
 	background-color: var(--basic-white);
 }
 
-.catalog-pagination-item a:hover,
-.catalog-pagination-item a:focus {
+.catalog-pagination-item a[href]:hover,
+.catalog-pagination-item a[href]:focus {
 	background-color: var(--special-extra-grey);
 }
 
-.catalog-pagination-item a:active {
+.catalog-pagination-item a[href]:active {
 	background-color:var(--special-extra-light-grey);
 	color: var(--special-black-opacity);
 	box-shadow: inset 0px 3px 0px var(--special-active);
