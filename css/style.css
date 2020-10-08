@@ -317,7 +317,7 @@ img {
 }
 
 .current {
-	background-image: url("../img/ellipse.svg");
+	background-image: url("../img/button-slide.svg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 
