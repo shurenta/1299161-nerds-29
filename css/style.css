@@ -1081,7 +1081,7 @@ form .form-button {
 	width: 338px;
 	left: 0;
 	bottom: 0;
-	/*display: none;*/
+	display: none;
 	padding-top: 26px;
 	padding-bottom: 44px;
 	padding-left: 10px;
@@ -1089,10 +1089,10 @@ form .form-button {
 }
 
 
-/*.catalog-item:hover .catalog-item-wrapper {
+.catalog-item:hover .catalog-item-wrapper {
 	display: block;
 }
-*/
+
 .catalog-item-wrapper h3 {
 	text-transform: uppercase; 
 	margin: 0;
