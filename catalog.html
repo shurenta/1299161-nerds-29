@@ -28,12 +28,12 @@
       <div class="title-catalog-wrapper">
   		  <h1 class="title-catalog">Магазин готовых шаблонов</h1>
       </div>
-      
+
       <div class="wrapper-catalog">
 
     		<section class="filter-shape">
-  <!--   	    <h2 class="visually-hidden">Фильтр шаблонов</h2>
-    			<form method="get" action="https://echo.htmlacademy.ru">
+    	    <h2 class="visually-hidden">Фильтр шаблонов</h2>
+    			<form method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="form-group">
               <legend class="form-legent">Стоимость:</legend>
               <div class="range-filter">
@@ -57,21 +57,50 @@
 
             <fieldset class="form-group form-group-grid">
               <legend class="form-legent">Сетка:</legend>
-              <label>
-                <input type="radio" name="group-grid" value="adaptive" checked>
-                Адаптивная
-              </label>
-              <label>
-                <input type="radio" name="group-grid" value="fixed">
-                Фиксированная
-              </label>
-              <label>
-                <input type="radio" name="group-grid" value="rubber">
-                Резиновая
-              </label>
+              <ul class="form-grid-list">
+                <li class="from-item form-grid-item">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="group-grid" id="adaptive" value="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li class="from-item form-grid-item">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="group-grid" id="fixed" value="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </li>
+                <li class="from-item form-grid-item">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="group-grid" id="rubber" value="rubber">
+                  <label for="rubber">Резиновая</label>
+                </li>
+              </ul>
             </fieldset>
+
+            <fieldset class="form-group form-group-features">
+              <legend class="form-legent">Особенности:</legend>
+              <ul class="form-list-features">
+                <li class="from-item form-item-features">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="slider" name="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li class="from-item form-item-features">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="advantages-block" name="advantages-block">
+                  <label for="advantages-block">Блок преимуществ</label>
+                </li>
+                <li class="from-item form-item-features">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="news" name="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li class="from-item form-item-features">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="gallery" name="gallery">
+                  <label for="gallery">Галерея</label>
+                </li>
+                <li class="from-item form-item-features">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="basket" name="basket">
+                  <label for="basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button form-button" type="submit">Показать</button>
           </form>
- -->    		</section>
+    		</section>
 
     		<section class="templates">
     			<h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -108,7 +137,7 @@
     					<img src="img/img-barbershop.jpg" width="358" height="578" alt="фото главной страницы «Barbershop»">	
     					<div class="catalog-item-wrapper">
     						<h3><a class="catalog-item-title" href="blank.html">Barbershop</a></h3>
-    						<p class="catalog-item-text">Сайт салона красоты.<br>Для мужчин, да.</p>
+    						<p class="catalog-item-text">Сайт салона красоты. Для мужчин, да.</p>
     						<a class="button catalog-item-button" href="blank.html">9 900 ₽</a>
     					</div>
     				</li>
@@ -116,7 +145,7 @@
     					<img src="img/img-mishka.jpg" width="358" height="578" alt="фото главной страницы «MISHKA»">
     					<div class="catalog-item-wrapper">
     						<h3><a class="catalog-item-title" href="blank.html">MISHKA</a></h3>
-    						<p class="catalog-item-text">Интернет-магазин<br>вязаных игрушек</p>
+    						<p class="catalog-item-text">Интернет-магазин вязаных игрушек</p>
     						<a class="button catalog-item-button" href="blank.html">9 900 ₽</a>
     					</div>
     				</li>
@@ -124,7 +153,7 @@
     					<img src="img/img-aplus.jpg" width="358" height="580" alt="фото главной страницы «A Plus»">
     					<div class="catalog-item-wrapper">
     						<h3><a class="catalog-item-title" href="blank.html">A Plus</a></h3>
-    						<p class="catalog-item-text">Лендинг курсов повышения<br>квалификации</p>
+    						<p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
     						<a class="button catalog-item-button" href="blank.html">9 900 ₽</a>
     					</div>	
     				</li>
@@ -132,7 +161,7 @@
     					<img src="img/img-kvast.jpg" width="358" height="578" alt="фото главной страницы «КВАСТ»">
     					<div class="catalog-item-wrapper">
     						<h3><a class="catalog-item-title" href="blank.html">КВАСТ</a></h3>
-    						<p class="catalog-item-text">Промо-сайт производителя<br>крафтового кваса</p>
+    						<p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
     						<a class="button catalog-item-button" href="blank.html">9 900 ₽</a>
     					</div>
     				</li>
@@ -147,8 +176,8 @@
     				<li class="catalog-pagination-item">
     					<a href="blank.html">3</a>
     				</li>
-    				<li class="catalog-pagination-item">
-    					<a href="blank.html">Следующая</a>
+    				<li class="catalog-pagination-item catalog-next">
+    					<a href="blank.html">Следующая </a>
     				</li>
     			</ul>
     		</section>
@@ -157,24 +186,22 @@
 
     <footer class="page-footer">
       <section class="footer-contacts">
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Как нас найти?</h2>
-          <img src="img/map.png" width="1440" height="416" alt="Наш адресc: 191186, Санкт-Петербург, Б. Конюшенная, д. 19/8">
-          <div class="wrapper-contacts">
-            <section class="footer-address">
-              <h3 class="visually-hidden">Наши контакты</h3>
-              <b>NЁRDS DESIGN STUDIO</b>
-              <p>
-                191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8
-              </p>
-              <p>тел.<a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-              <a class="button write-us-button" href="blank.html">Напишите нам</a>
-            </section>
-          </div>
-        </section>
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <img src="img/map.png" width="1440" height="416" alt="Наш адресc: 191186, Санкт-Петербург, Б. Конюшенная, д. 19/8">
+        <div class="wrapper-contacts">
+          <section class="footer-address">
+            <h3 class="visually-hidden">Наши контакты</h3>
+            <b>NЁRDS DESIGN STUDIO</b>
+            <p class="adress-text">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>тел. <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+            <a class="button write-us-button" href="blank.html">Напишите нам</a>
+          </section>
+        </div>
       </section>
-
+      
       <section class="footer-social  wrapper-container">
         <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul class="footer-social-list">
