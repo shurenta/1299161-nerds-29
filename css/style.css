@@ -584,7 +584,7 @@ img {
 	font-size: 16px;
 	line-height: 18px;
 	margin: 0;
-	margin-top: 15px;
+	margin-top: 14px;
 }
 
 
@@ -619,7 +619,7 @@ img {
 	display: block;
 }
 
-.partners-link img {
+.partners-link {
 	display: block;
 	opacity: 0.2;
 }
@@ -639,12 +639,12 @@ img {
 	display: none;
 }
 
-.partners-link img:hover,
-.partners-link img:focus {
+.partners-link:hover,
+.partners-link:focus {
 	opacity: 1;
 }
 
-.partners-link img:active {
+.partners-link:active {
 	opacity: 0.1;
 }
 
@@ -747,14 +747,14 @@ img {
 
 .form-grid-list {
 	margin: 0;
-	margin-top: 25px;
+	margin-top: 14px;
 	padding: 0;
 	list-style: none;
 	line-height: 19px;
 }
 
 .form-grid-list li {
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .form-grid-list li:last-child {
@@ -762,7 +762,7 @@ img {
 }
 
 .form-group-features {
-	margin-top: 46px;
+	margin-top: 42px;
 	line-height: 19px;
 }
 
@@ -770,28 +770,35 @@ img {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: 16px;
+	margin-top: 14px;
 }
 
 .form-list-features li {
-	margin-bottom: 17px; 
+	margin-bottom: 15px; 
 }
 
 .form-list-features li:last-child {
 	margin-bottom: 0; 
 }
 
-.from-item label {
+.form-item label {
 	position: relative;
   	display: block;
   	cursor: pointer;
   	user-select: none;
-  	padding-left: 33px;
+  	padding-left: 36px;
+  	padding-top: 3px;
+  	padding-bottom: 3px;
 }
 
+.form-grid-item label {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
 
 .filter-input-radio + label::before {
 	content: "";
+	display: block;
 	position: absolute;
 	width: 18px;
 	height: 18px;
@@ -799,11 +806,32 @@ img {
 	opacity: 0.4;
 	border-radius: 50%;
 	left: 0;
-	bottom: -3px;
+	bottom: 0px;
+}
+
+.filter-input-radio:checked + label::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	background-color: var(--basic-dark-grey);
+	border-radius: 50%;
+	opacity: 0.4;
+	left: 9px;
+	top: 7px;
 }
 
 .filter-input-radio + label:hover::before,
 .filter-input-radio:checked:hover + label::after {
+	opacity: 1;
+}
+
+.filter-input-radio:focus + label::before {
+	opacity: 1;
+}
+
+.filter-input-radio:focus + label::after {
 	opacity: 1;
 }
 
@@ -812,25 +840,14 @@ label.block {
 }
 
 .filter-input-radio[disabled] + label:hover::before,
-.filter-input-radio[disabled] + label:hover::after
- {
+.filter-input-radio[disabled] + label:hover::after {
 	opacity: 0.4;
 }
 
-.filter-input-radio:checked + label::after {
-	content: "";
-	position: absolute;
-	width: 9px;
-	height: 9px;
-	background-color: var(--basic-dark-grey);
-	border-radius: 50%;
-	opacity: 0.4;
-	left: 9px;
-	top: 4px;
-}
 
 .filter-input-checkbox + label::before {
 	content: "";
+	display: block;
 	position: absolute;
 	width: 23px;
 	height: 23px;
@@ -841,13 +858,10 @@ label.block {
 	bottom: 1px;
 }
 
-.filter-input-checkbox:checked + label::before {
-	display: none;
-}
-
 
 .filter-input-checkbox:checked + label::after {
 	content: "";
+	display: block;
 	position: absolute;
 	width: 26px;
 	height: 23px;
@@ -857,6 +871,11 @@ label.block {
 	left: 0px;
 	bottom: 1px;
 }
+
+.filter-input-checkbox:checked + label::before {
+	display: none;
+}
+
 
 .filter-input-checkbox + label:hover::before,
 .filter-input-checkbox:checked:hover + label::after
@@ -870,15 +889,31 @@ label.block {
 	opacity: 0.4;
 }
 
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after {
+  	opacity: 1;
+}	
+
+
 form .form-button {
-	width: 240px;
-	margin-top: 48px;
+	width: 260px;
+	margin-top: 46px;
 	padding-right: 10px;
 	padding-left: 10px;
 	border: none;
 	background-color: var(--basic-light-gray);
 	color: var(--basic-black);
+	cursor: pointer;
 }
+
+form .form-button:hover {
+	background-color: var(--special-extra-grey);
+}
+
+form .form-button:active {
+	outline: none;
+}
+
 
 /*page-catalog*/
 
@@ -1090,6 +1125,10 @@ form .form-button {
 
 
 .catalog-item:hover .catalog-item-wrapper {
+	display: block;
+}
+
+.catalog-item:focus-within .catalog-item-wrapper {
 	display: block;
 }
 
@@ -1398,8 +1437,8 @@ li:nth-child(6n) .catalog-item-text {
 .modal-write-us {
 	position: fixed;
 	left: 50%; 
-	transform: translateX(-50%);
-	top: 155px;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	background-color: var(--basic-white);
 	padding-top: 57px;
 	padding-bottom: 90px;
