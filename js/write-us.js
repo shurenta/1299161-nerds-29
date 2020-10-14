@@ -39,12 +39,24 @@ modalOpen.addEventListener("click", function (evt) {
 modalClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modal.classList.remove("modal-write-us-show");
+	modalName.classList.remove("modal-write-us-error");
+	modalEmail.classList.remove("modal-write-us-error");
+	modalTextarea.classList.remove("modal-write-us-error");
 });
 
 
 modalForm.addEventListener("submit", function (evt) {
-	if (!modalName.value || !modalEmail.value) {
+	if (!modalName.value || !modalEmail.value || !modalTextarea.value) {
 		evt.preventDefault();
+		modalName.classList.remove("modal-write-us-error");
+		modalName.offsetWidth = modalName.offsetWidth;
+		modalName.classList.add("modal-write-us-error");
+		modalEmail.classList.remove("modal-write-us-error");
+		modalEmail.offsetWidth = modalEmail.offsetWidth;
+		modalEmail.classList.add("modal-write-us-error");
+		modalTextarea.classList.remove("modal-write-us-error");
+		modalTextarea.offsetWidth = modalTextarea.offsetWidth;
+		modalTextarea.classList.add("modal-write-us-error");
 	} else {
 		if (isStorageSupport) {
 			localStorage.setItem("name", modalName.value);
@@ -59,6 +71,9 @@ window.addEventListener("keydown", function (evt) {
     if (modal.classList.contains("modal-write-us-show")) {
       evt.preventDefault();
       modal.classList.remove("modal-write-us-show");
+      modalName.classList.remove("modal-write-us-error");
+			modalEmail.classList.remove("modal-write-us-error");
+			modalTextarea.classList.remove("modal-write-us-error");
     }
   }
 });
