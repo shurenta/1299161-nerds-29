@@ -53,6 +53,7 @@ input[type="radio"].visually-hidden {
 	--special-toggle-background: #ABABAB;
 	--special-toogle-shadow: #CFCFCF;
 	--specail-color-input: #283136;
+	--specail-svg-active: #231F20;
 }
 
 /* Global */
@@ -123,7 +124,7 @@ img {
 }
 
 .main-header-logo {
-	margin-right: 200px;
+	margin-right: 204px;
 }
 
 .main-header-logo img {
@@ -251,9 +252,25 @@ img {
 	background-repeat: no-repeat;
 }
 
+.quality-slide-2 .quality-slogan {
+	margin-bottom: 38px;
+}
+
+.quality-slide-2 .quality-button{
+	margin-top: 26px;
+}
+
 .quality-slide-3 {
 	background-image: url("../img/nerds-index-slide3.png");
 	background-repeat: no-repeat;
+}
+
+.quality-slide-3 .quality-slogan {
+	margin-bottom: 38px;
+}
+
+.quality-slide-3 .quality-button{
+	margin-top: 26px;
 }
 
 
@@ -345,7 +362,7 @@ img {
 	column-gap: 100px; 
 	padding: 0;
 	margin: 0;
-	margin-bottom: 80px;
+	margin-bottom: 70px;
 }
 
 
@@ -372,6 +389,7 @@ img {
 
 .services-item {
 	padding-top: 146px;
+	padding-bottom: 10px;
 	width: 300px;
 	position: relative;
 	display: flex;
@@ -385,6 +403,7 @@ img {
 	width: 300px;
 	height: 146px;
 	background-image: url("../img/illustration-1.png");
+	background-color: var(--basic-dark-grey);
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0;
@@ -397,6 +416,7 @@ img {
 	width: 300px;
 	height: 146px;
 	background-image: url("../img/illustration-2.png");
+	background-color: var(--basic-dark-grey);
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0;
@@ -409,6 +429,7 @@ img {
 	width: 300px;
 	height: 146px;
 	background-image: url("../img/illustration-3.png");
+	background-color: var(--basic-dark-grey);
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0;
@@ -498,7 +519,6 @@ img {
 .about-us-lead {
 	font-weight: 700;
 	text-transform: uppercase;
-	color: var(--basic-light-black);
 	margin: 0;
 	margin-top: 39px;
 }
@@ -581,7 +601,6 @@ img {
 }
 
 .accuracy-description-definition {
-	font-size: 16px;
 	line-height: 18px;
 	margin: 0;
 	margin-top: 14px;
@@ -983,7 +1002,7 @@ form .form-button:active {
 
 
 
-.templates-item a[href] {
+.templates-item a {
 	color: color: var(--basic-black);
 	font-size: 14px;
 	line-height: 18px;
@@ -1008,53 +1027,53 @@ form .form-button:active {
 }
 
 
-.templates-item-up a {
+.item-link-up svg {
+	fill: var(--special-logo-grey);
 	display: block;
 	width: 11px;
 	height: 10px;
-	background-image: url("../img/icon-down-dir.svg");
-	background-repeat: no-repeat;
+	fill-opacity: 0.2;
+}
+
+.item-link-down svg {
+	fill: var(--special-logo-grey);
 	transform: rotate(180deg);
-	opacity: 0.3;
-}
-
-.templates-item-down a {
 	display: block;
 	width: 11px;
 	height: 10px;
-	background-image: url("../img/icon-down-dir.svg");
-	background-repeat: no-repeat;
-	opacity: 0.3;
+	fill-opacity: 0.2;
 }
 
-.templates-item-down {
+.item-link-up svg {
 	margin-right: 18px;
 }
 
-.templates-item-up a[href]:hover,
-.templates-item-up a[href]:focus {
-	opacity: 0.6;
+.item-link-up:hover svg,
+.item-link-up:focus svg {
+	fill-opacity: 1;
 }
 
-.templates-item-up a:active {
-	opacity: 1;
+.item-link-up:active svg {
+	fill: var(--specail-svg-active);
 }
 
-.templates-item-down a[href]:hover,
-.templates-item-down a[href]:focus {
-	opacity: 0.6;
+.templates-item-down:hover svg,
+.templates-item-down:focus svg {
+	fill-opacity: 1;
 }
 
-.templates-item-down a:active {
-	opacity: 1;
+.item-link-down:active svg {
+	fill: var(--specail-svg-active);
 }
+
 
 .templates-active a {
 	opacity: 1;
 }
 
-.templates-active a[href] {
-	opacity: 1;
+.item-link-active svg {
+	fill-opacity: 1;
+	fill: var(--specail-svg-active);
 }
 
 
@@ -1171,7 +1190,6 @@ form .form-button:active {
 	width: 205px;
 	text-align: center;
 	color: var(--special-gray); 
-	font-size: 16px;
 	line-height: 18px;
 	margin: 0 auto;
 	margin-top: 12px;
@@ -1313,7 +1331,6 @@ li:nth-child(6n) .catalog-item-text {
 
 .adress-text {
 	color: var(--special-gray);
-	font-size: 16px;
 	line-height: 18px;
 	margin: 0;
 	padding-top: 22px;
@@ -1422,7 +1439,6 @@ li:nth-child(6n) .catalog-item-text {
 
 .footer-social-text {
 	color: var(--special-dark-grey);
-	font-size: 16px;
 	line-height: 22px;
 	margin: 0;
 	margin-top: 10px;
