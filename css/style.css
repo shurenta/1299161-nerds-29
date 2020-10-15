@@ -1003,7 +1003,7 @@ form .form-button:active {
 
 
 .templates-item a {
-	color: color: var(--basic-black);
+	color: var(--basic-black);
 	font-size: 14px;
 	line-height: 18px;
 	opacity: 0.3;
